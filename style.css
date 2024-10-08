@@ -1,0 +1,325 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+html{
+scroll-behavior: smooth;
+    
+}
+
+body{
+    background-color: #D1D0D0;
+    color: #5C4E4E;
+}
+#header{
+    width: 100%;
+    height:100vh;
+    background-size:contain;
+    background-position: center;
+    
+}
+.image{
+    margin-left: 13rem;
+    margin-bottom: 10rem;
+    width: 100%;
+    height: 0vh;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-evenly;
+    
+}
+
+.image img {
+   
+    border-radius: 140px;
+    width: 250px;
+    height: 250px;
+    object-fit: cover; /* Ensures the image doesn't stretch */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
+    margin-bottom: 20rem;
+    margin-right: 28rem;
+}
+    
+
+.container{
+    padding: 10px 10%;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+nav h1{
+    color: #5C4E4E ;
+    font-weight: bold;
+    font-size: 3rem;
+    margin-left: -2rem;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 20px 20px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #5C4E4E;
+    font-size: 25px;
+    position: relative;
+}
+nav ul li a:hover{
+    text-decoration: none;
+    color: crimson;
+    font-size: 25px;
+    position: relative;
+}
+nav ul li a::after{
+    content: "";
+    width: 0%;
+    height: 2px;
+    background-color: crimson;
+    position: absolute;
+    left: 0px;
+    margin-top: 30px;
+    transition: 0.5s;
+    
+    
+}
+nav ul li a:hover::after{
+    width: 100%;
+
+}
+.header-text{
+    margin-top: 20rem;
+    font-size: 22px;
+    margin-left: 38rem;
+   
+}
+.header-text p{
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+    color: crimson;
+    font-weight: 400;
+  
+}
+.header-text h1 a{
+    color: crimson;
+}
+/*-----------------------------About------------------------------------------*/
+
+
+/*.........................-----services----------------------*/
+div#services{
+    height: 600px;
+    background-color: #D1D0D0 ;
+
+}
+#services{
+    padding: 40px 0px;   
+}
+
+.services-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-gap:40px;
+    margin-top: 50px;
+}
+.services-list div{
+    font-size: 20px;
+    font-weight: 400;
+    padding: 30px;
+    background-color: rgb(10, 186, 181);
+    border-radius: 10px;
+}
+.services-list div i{
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+
+.services-list div h1{
+    font-size: 25px;
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+    color: crimson;
+
+
+}
+.services-list div p{
+    font-size: 20px;
+    margin-bottom: 20px;
+    font-weight: 500;
+    line-height: 1.5rem;
+    color: white;
+}
+.services-list div a{
+    font-size: 20px;
+    color: crimson;
+    display: inline-block;
+}
+.services-list div:hover{
+    background-color: rgb(10, 186, 181);
+    transform: translateY(-10px);
+    transition: .5s;
+    
+    
+}
+
+/*-------------------My work and resources-----------------*/
+#portfolio{
+    padding: 50px 0px;
+}
+.work-list{
+    .services-list div{
+        font-size: 20px;
+        font-weight: 400;
+        padding: 30px;
+        background-color: rgb(35, 33, 33);
+        border-radius: 10px;
+    }
+}
+.work-list div{
+    font-size: 20px;
+    font-weight: 400;
+    padding: 30px;
+    background-color: rgb(10, 186, 181);
+    border-radius: 10px;
+    margin: 40px 0px;
+    
+}
+.work-list div a{
+    margin-top: 35px;
+    font-size: 20px;
+    color: crimson;
+    display: inline-block;
+}
+div.layer h3{
+    margin-left: -30px;
+}
+div.layer p{
+    margin-top: 10px;
+    margin-left: -30px;
+    color: brown;
+    color: white;
+}
+/*-------------------contact-------------------*/
+div.container .last{
+    padding-bottom: 60px;
+}
+.contact-left{
+    flex-basis: 35%;
+    
+
+}
+.contact-right{
+    flex-basis: 60%;
+
+}
+p {
+    font-weight: 600;
+    font-size: 20px;
+    margin-top: 28px;
+}
+.social-icon{
+    margin-top: 20px;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 28px;
+}
+.social-icon a {
+    display: inline-block;
+    font-size: 40px;
+    margin-right: 15px;
+    text-decoration: none;
+    color: rgb(56, 56, 223);
+    transition: transform .4s;
+}
+.social-icon a:hover {
+   
+    transform: translateY(-5px);
+    color: crimson;
+    display: inline-block;
+    font-size: 40px;
+    margin-right: 15px;
+    text-decoration: none;
+}
+.btn {
+    display: inline-block;
+    margin: 30px 0px;
+    color: white;
+    padding-bottom: 15px;
+    font-size: 25px;
+    padding: 1rem 3rem;
+    border: none;
+    border-radius: 10px;
+    width: fit-content;
+    text-align: center;
+    text-decoration: none;
+    background-color: crimson;
+    color: white;
+    
+}
+.btn:hover{
+    transform: translateY(-2px);
+    transition: .3s;
+    border: none;
+
+
+
+}
+
+.contact-right form{
+    width: 100%;
+}
+form input, form textarea{
+    width: 80%;
+   border: 0;
+    outline: none;
+    background-color: #262626;
+    padding: 15px;
+    margin: 12px 0;
+    font-size: 18px;
+    border-radius: 7px;
+    color: white;
+}
+
+
+form button{
+    display: inline-block;
+    margin: 30px 0px;
+    color: white;
+    padding-bottom: 15px;
+    font-size: 25px;
+    padding: 1rem 3rem;
+    border: none;
+    border-radius: 10px;
+    width: fit-content;
+    text-align: center;
+    text-decoration: none;
+    background-color: crimson;
+    color: white;
+    margin-top: 5px;
+    padding: 14px 40px;
+    
+}
+.copyright{
+    width: 100%;
+    background-color: black;
+    color: white;
+    margin-top: 20px;
+    padding: 25px 0;
+    text-align: center;
+   
+}
+.copyright h1, p{
+    font-size: 20px;
+    font-weight: 300;
+
+}
+
+
