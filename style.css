@@ -11,7 +11,7 @@ html{
 
 body{
     background-color: #D1D0D0;
-    color: #5C4E4E;
+    color: white;
     padding-top: 100px; /* Adjust to the navbar height */
 }
 
@@ -20,6 +20,7 @@ body{
     height:100vh;
     background-size: contain;
     background-position: center;
+    background-color: #2E2950;
 }
 
 .image{
@@ -50,9 +51,21 @@ div.container {
     width: 100%;
     padding: 1rem 10%;
 }
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    position: fixed; 
+    top: 0; 
+    width: 140%; 
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    margin-left: -12rem;
+}
 
 nav h1{
-    color: #5C4E4E ;
+    color: orangered ;
     font-weight: bold;
     font-size: 3rem;
     margin-left: -2rem;
@@ -67,7 +80,7 @@ nav ul li{
 
 nav ul li a{
     text-decoration: none;
-    color: #5C4E4E;
+    color: darkblue;
     font-size: 25px;
     position: relative;
 }
@@ -103,26 +116,18 @@ nav ul li a:hover::after{
 #header-text p{
     margin-bottom: 1.5rem;
     font-size: 2rem;
-    color: crimson;
+    color: orangered;
     font-weight: 400;
 }
 
 #header-text h1 a{
-    color: crimson;
+    color: orangered;
+}
+a#cv.btn{
+    background-color: orangered;
 }
 
-nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    position: fixed; 
-    top: 0; 
-    width: 100%; 
-    background-color: #D1D0D0; 
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
-    margin-left: -12rem;
-}
+
 
 
 body {
@@ -264,6 +269,9 @@ body {
 
 
 /*----------------------------educaion-------------------------------*/
+#about{
+    background-color: #FB6B90;
+}
 .container{
 	width: 100%;
 	padding: 13rem 10%;
@@ -279,7 +287,7 @@ main.row{
 }
 .col header.title{
 	font-family: helvetica;
-	color: crimson;
+	color: darkblue;
 	padding: 0px 0px 20px 30px;
 }
 .col .contents{
@@ -290,7 +298,7 @@ main.row{
 	position: relative;
 	padding: 20px;
 	border: 1px solid #eaeaea;
-	background-color: #ffffff;
+	background-color: #F8D210;
 	cursor: pointer;
 	transition: all 0.4s;
 	margin-bottom: 20px;
@@ -335,6 +343,9 @@ main.row{
 }
 
 /*-----------------------------skills------------------------------------------*/
+#skill{
+    background-color: #0673C1;
+}
 .containers{
 	position: relative;
 	width: 100%;
@@ -350,7 +361,7 @@ main.row{
 .containers .main-title h1{
 	position: relative;
 	font-size: 40px;
-	color: #242223;
+	color: white;
 	margin-bottom: 30px;
 	display: inline-block;
 }
@@ -361,20 +372,20 @@ main.row{
 	height: 1px;
 	top: 125%;
 	left: 0;
-	background-color: #808080;
+	background-color: white;
 }
 .containers .main-title h1::after{
 	content: '';
 	position: absolute;
 	width: 50%;
 	height: 3px;
-	background-color: #d03645;
+	background-color: white;
 	top: calc(125% - 1px);
 	left: 50%;
 	transform: translateX(-50%);
 }
 .main-title p{
-	color: #808080;
+	color: white;
 }
 .containers .row{
 	width: 100%;
@@ -387,7 +398,7 @@ main.row{
 }
 .row .sub-title h2{
 	position: relative;
-	color: #242223;
+	color: white;
 	font-size: 22px;
 	font-family: helvetica;
 	display: inline-block;
@@ -400,7 +411,7 @@ main.row{
 	height: 1px;
 	top: 125%;
 	left: 0;
-	background-color: #808080;
+	background-color: orangered;
 }
 .row .sub-title h2::after{
 	content: '';
@@ -409,7 +420,7 @@ main.row{
 	height: 3px;
 	top: calc(125% - 1px);
 	left: 0;
-	background-color: #d03645;
+	background-color: orangered;
 }
 .subject{
 	font-size: 18px;
@@ -422,7 +433,7 @@ main.row{
 	position: relative;
 	width: 100%;
 	height: 5px;
-	background-color: #808080;
+	background-color: white;
 	border-radius: 15px;
 	margin-bottom: 20px;
 }
@@ -431,14 +442,14 @@ main.row{
 	content: attr(value);
 	top: -35px;
 	right: 0;
-	color: #808080;
+	color: orangered;
 	font-size: 18px;
 }
 .progress-line{
 	position: absolute;
 	width: 0%;
 	height: 7px;
-	background-color: #d03645;
+	background-color: orangered;
 	border-radius: 15px;
 	top: -1px;
 	animation: animate 1.5s cubic-bezier(1, 0.2, 0.2, 1) forwards;
@@ -457,7 +468,7 @@ main.row{
 	top: 50%;
 	left: 100%;
 	transform: translate(-50%, -50%);
-	background-color: #d03645;
+	background-color: orangered;
 }
 @media(max-width: 768px){
 	.container{
@@ -497,7 +508,7 @@ nav {
 
 
 .scrolled {
-    background-color: #D1D0D0; 
+    background-color: ; 
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
 }
 
@@ -505,18 +516,19 @@ nav {
 
 
 /*.........................-----services----------------------*/
-div#services{
+#services{
     height: 600px;
-    background-color: #D1D0D0 ;
+    background-color: hotpink;
 
 }
 #services{
-    padding: -50px 0px;   
+    padding: -40px 0px;   
 }
 
 img {
     height: 330px;
     width: 350px;
+    
     margin-left: 5px;
     border-radius: 20px;
 
@@ -525,16 +537,16 @@ img {
 
 .services-list{
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-template-columns: repeat(auto-fit,minmax(100px,2fr));
     grid-gap:40px;
     margin-top: 50px;
 }
 .services-list div{
     height: 400px;
-    width: 400px;	
+    width: 400px;
     font-size: 20px;
     font-weight: 400;
-    padding: 30px;
+    padding: 0px 25px 25px 25px;
     background-color: rgb(10, 186, 181);
     border-radius: 10px;
 }
@@ -571,48 +583,16 @@ img {
     
 }
 
-/*-------------------My work and resources-----------------*/
-#portfolio{
-    padding: 50px 0px;
-}
-.work-list{
-    .services-list div{
-        font-size: 20px;
-        font-weight: 400;
-        padding: 30px;
-        background-color: rgb(35, 33, 33);
-        border-radius: 10px;
-    }
-}
-.work-list div{
-    font-size: 20px;
-    font-weight: 400;
-    padding: 30px;
-    background-color: rgb(10, 186, 181);
-    border-radius: 10px;
-    margin: 40px 0px;
-    
-}
-.work-list div a{
-    margin-top: 35px;
-    font-size: 20px;
-    color: crimson;
-    display: inline-block;
-}
-div.layer h3{
-    margin-left: -30px;
-}
-div.layer p{
-    margin-top: 10px;
-    margin-left: -30px;
-    color: brown;
-    color: white;
-}
+
 /*-------------------contact-------------------*/
+
+#contact{
+    background-color: #E1C340;
+}
 
 div.container .last{
     padding-bottom: 60px;
-    d 
+
 }
 .contact-left{
     flex-basis: 35%;
